@@ -1,0 +1,13 @@
+# Files not uploaded by `gcloud run deploy --source .` (the source goes to a Cloud Storage
+# bucket before the build). .env holds local keys and must never leave the machine.
+.gcloudignore
+.git/
+.gitignore
+.env
+.env.*
+!.env.example
+.venv/
+.pytest_cache/
+.ruff_cache/
+**/__pycache__/
+*.py[oc]

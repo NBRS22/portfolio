@@ -1,0 +1,16 @@
+# Each app has its own .gitignore (frontend/, backend/voice_agent/); this one covers the root.
+
+# Secrets, wherever they are
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Local tooling
+.claude/

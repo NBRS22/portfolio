@@ -1,0 +1,15 @@
+# Keep the build context small and secrets out of the image.
+# .env must never be copied: the Pipecat runner loads it with override=True,
+# which would replace the variables and secrets set on Cloud Run.
+.env
+.env.*
+!.env.example
+.venv/
+.git/
+.pytest_cache/
+.ruff_cache/
+**/__pycache__/
+*.py[oc]
+tests/
+Dockerfile
+.dockerignore
